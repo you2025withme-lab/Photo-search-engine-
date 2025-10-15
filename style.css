@@ -39,9 +39,6 @@ html,body{height:100%;margin:0;font-family:Inter, Poppins, system-ui;background:
 
 /* footer */
 .footer{padding:14px;text-align:center;color:var(--muted);opacity:0.9}
-.footer-links{display:flex;justify-content:center;gap:12px;margin-bottom:8px}
-.footer-links a{color:var(--text);font-size:1.2rem;text-decoration:none;transition:color .25s}
-.footer-links a:hover{color:var(--accent2)}
 
 /* responsive */
 @media(max-width:760px){
