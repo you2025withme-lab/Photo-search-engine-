@@ -4,93 +4,69 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Photo Search Engine</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="title" content="Photo Search Engine - Reverse Image Finder">
-  <meta name="description" content="Upload an image and instantly search for similar photos using Google, Bing, or Yandex. Fast, simple, and universal.">
-  <meta name="keywords" content="photo search engine, reverse image search, image finder, visual search, image lookup, google lens alternative">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Nasa wow">
-
-  <!-- Social Sharing -->
-  <meta property="og:title" content="Photo Search Engine">
-  <meta property="og:description" content="Upload an image and find visually similar pictures instantly using Google, Bing, or Yandex.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://YOUR-SITE-NAME.netlify.app/">
-  <meta property="og:image" content="https://YOUR-SITE-NAME.netlify.app/preview.jpg">
-  <meta name="theme-color" content="#151515">
-
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/685/685655.png">
 </head>
 <body>
 
-<header class="nav">
-  <div class="brand">
-    <div class="logo">🔍</div>
-    <div class="sitename">Photo Search Engine</div>
-  </div>
+  <header class="nav">
+    <div class="brand">
+      <div class="logo">🔍</div>
+      <div class="sitename">Photo Search Engine</div>
+    </div>
+    <nav class="nav-actions" aria-hidden="true">
+      <div class="icon">🏠</div>
+      <div class="icon">⚙️</div>
+    </nav>
+  </header>
 
-  <nav class="nav-actions" aria-hidden="true">
-    <div class="icon">🏠</div>
-    <div class="icon"> </div>
-  </nav>
-</header>
-
-<section class="ad-row">
-  <div class="ad-banner" id="ad-top">
-    <div class="ad-label">[AD]</div>
-  </div>
-</section>
-
-<main class="main">
-  <section id="dropZone" class="drop-zone">
-    <div class="drop-inner">
-      <div class="huge-icon">📷</div>
-      <input id="imageInput" type="file" accept="image/*" hidden>
-      <label for="imageInput" class="choose-btn">Choose Image</label>
-
-      <div class="engines">
-        <button class="engine" data-engine="google">Google</button>
-        <button class="engine" data-engine="bing">Bing</button>
-        <button class="engine" data-engine="yandex">Yandex</button>
-      </div>
+  <section class="ad-row">
+    <div class="ad-banner" id="ad-top">
+      <div class="ad-label">[AD]</div>
     </div>
   </section>
 
-  <div class="ad-banner small" id="ad-mid">
-    <div class="ad-label">[AD]</div>
-  </div>
-</main>
+  <main class="main">
+    <section id="dropZone" class="drop-zone">
+      <div class="drop-inner">
+        <div class="huge-icon">📷</div>
+        <input id="imageInput" type="file" accept="image/*" hidden>
+        <label for="imageInput" class="choose-btn">Choose Image</label>
 
-<section class="gallery" id="gallery">
-  <div class="g-grid">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400" data-src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=900" alt="">
-    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" data-src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900" alt="">
-    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=400" data-src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=900" alt="">
-    <img src="https://images.unsplash.com/photo-1473187983305-f615310e7daa?w=400" data-src="https://images.unsplash.com/photo-1473187983305-f615310e7daa?w=900" alt="">
-    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" data-src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=900" alt="">
-    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400" data-src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=900" alt="">
-  </div>
-</section>
+        <div class="engines">
+          <button class="engine" data-engine="google">Google</button>
+          <button class="engine" data-engine="bing">Bing</button>
+          <button class="engine" data-engine="yandex">Yandex</button>
+        </div>
+      </div>
+    </section>
 
-<section class="ad-row bottom">
-  <div class="ad-banner wide" id="ad-bottom">
-    <div class="ad-label">[AD]</div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="f-inner">
-    <div class="footer-links">
-      <a href="about.html" title="About"><span>ℹ️</span></a>
-      <a href="privacy.html" title="Privacy Policy"><span>🔒</span></a>
-      <a href="contact.html" title="Contact"><span>✉️</span></a>
+    <div class="ad-banner small" id="ad-mid">
+      <div class="ad-label">[AD]</div>
     </div>
-    <div class="copyright">© 2025 Photo Search Engine</div>
-  </div>
-</footer>
+  </main>
 
-<script src="script.js"></script>
+  <section class="gallery" id="gallery">
+    <div class="g-grid">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400" data-src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=900" alt="">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" data-src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900" alt="">
+      <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=400" data-src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=900" alt="">
+      <img src="https://images.unsplash.com/photo-1473187983305-f615310e7daa?w=400" data-src="https://images.unsplash.com/photo-1473187983305-f615310e7daa?w=900" alt="">
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" data-src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=900" alt="">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400" data-src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=900" alt="">
+    </div>
+  </section>
+
+  <section class="ad-row bottom">
+    <div class="ad-banner wide" id="ad-bottom">
+      <div class="ad-label">[AD]</div>
+    </div>
+  </section>
+
+  <footer class="footer" aria-hidden="true">
+    <div class="f-inner">© 2025 | Contact: nasa2025withme@gmail.com</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
